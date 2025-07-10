@@ -34,7 +34,7 @@ beforeAll(() => {
   app.get("/api/user/:id", (req, res) => {
     res.json({
       userId: req.params?.id,
-      q: req.query?.search,
+      q: req.query?.q,
     });
   });
 
